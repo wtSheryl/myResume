@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Phoebe's Resume</title>
+		<link rel="styleshee" type="text/css" href="js/lib/fullPage/dist/fullpage.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<div>nav BAr</div>
+		<div id="fullpage">
+			<div class="section">
+				<h1>First section</h1></div>
+			<div class="section">
+				<h1>Second section</h1></div>
+			<div class="section">
+				<h1>Third section</h1></div>
+			<div class="section">
+				<h1>Fourth section</h1></div>
+		</div>
+		<script type="text/javascript" src="js/lib/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/lib/fullPage/vendors/easings.min.js"></script>
+		<script type="text/javascript" src="js/lib/fullPage/vendors/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="js/lib/fullPage/dist/fullpage.min.js"></script>
+		<script type="text/javascript" src="js/lib/ejs.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					autoScrolling: true,
+					scrollHorizontally: true,
+					sectionsColor : ['pink', 'red'],
+				});
+			});
+		</script>
+	</body>
+
+</html>
