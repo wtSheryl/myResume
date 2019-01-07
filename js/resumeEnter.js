@@ -44,14 +44,7 @@ $(function () {
       afterRender: function () {
         // page4 透明背景
         $('item-4').css('background', 'rgba(255, 255, 255, .1)');
-        //侧边导航事件
-        var Tooltips = ['个人简历', '基本资料', '专业技能', '工作经历', '自我评价'];
-        $("#fp-nav ul li").each(function (index) {
-          this.dataset['toggle'] = 'tooltip';
-          this.dataset['placement'] = 'left';
-          $(this).attr('title', Tooltips[index])
-        })
-        $('[data-toggle="tooltip"]').tooltip();
+
         // 顶部导航栏自动会拉事件
         if ($('.navbar-toggle').css('display') == 'block') {
           $('.navbar-collapse li').on('click', function () {
@@ -84,7 +77,6 @@ $(function () {
         switch (index) {
           case 1:
             $('.item-1 .corner').hide();
-            $('.main_content-hide').hide();
             $('.navbar').removeClass('black');
             break;
           case 2:
