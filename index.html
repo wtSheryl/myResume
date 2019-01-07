@@ -1,94 +1,257 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="shortcut icon" href="img/shortcut.jpg"/>
+    <!--lib css-->
+    <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <!--personal css-->
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default main_content" id = "header-content">
+</nav>
+<div class="guns sky">
+    <div class="clouds_one"></div>
+    <div class="clouds_two"></div>
+    <div class="clouds_three"></div>
+</div>
+<div class="pure">
+</div>
+<div id="main_content">
+    <div class="section item-1">
+        <div class="row word">
+            <span class="main_content-hide">前端工程师</span>
+            <span class="hidden-xs main_content-hide">简历</span>
+            <span class="col-xs-12 hidden-sm hidden-md hidden-lg main_content-hide">简历</span>
 
-	<head>
-		<meta charset="utf-8" />
-		<title>Phoebe's Resume</title>
-		<link rel="styleshee" type="text/css" href="js/lib/fullPage/dist/fullpage.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
+            <p class="motto main_content-hide hinge-sty" style="position: relative">爱技术，爱生活</p>
+            <a href="#" class="next-page ">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+        </div>
 
-	<body>
-		<header>
-			<nav id="myMenu">
-				<ul>
-					<li data-menuanchor="introductionNav" class="active">
-						<a href="#introduction">个人简介</a>
-					</li>
-					<li data-menuanchor="exprienceNav">
-						<a href="#exprience">项目经验</a>
-					</li>
-					<li data-menuanchor="skillsNav">
-						<a href="#skills">职业技能</a>
-					</li>
-					<li data-menuanchor="valuationNav">
-						<a href="#valuation">自我评价</a>
-					</li>
-				</ul>
-			</nav>
+        <div class="corner1 corner">
+            <img src="./images/page_home/1.png" alt=""/>
+        </div>
+        <div class="corner2 corner">
+            <img src="./images/page_home/2.png" alt=""/>
+        </div>
+        <div class="corner3 corner">
+            <img src="./images/page_home/3.png" alt=""/>
+        </div>
+        <div class="corner4 corner">
+            <img src="./images/page_home/4.png" alt=""/>
+        </div>
 
-		</header>
-		<section id="fullpage">
-			<h1 id="header">TEST</h1>
-			<div class="section" id="introduction">
-				<h1>First section</h1>
-			</div>
-			<div class="section" id="exprience">
-				<h1>Second section</h1>
-			</div>
-			<div class="section" id="skills">
-				<h1>Third section</h1>
-			</div>
-			<div class="section" id="valuation">
-				<h1>Fourth section</h1>
-				<h1>Fourth section</h1>
-				<h1>Fourth section</h1>
-			</div>
-		</section>
-		<script type="text/javascript" src="js/lib/jquery-2.2.3.min.js"></script>
-		<script type="text/javascript" src="js/lib/fullPage/vendors/easings.min.js"></script>
-		<script type="text/javascript" src="js/lib/fullPage/vendors/scrolloverflow.min.js"></script>
-		<script type="text/javascript" src="js/lib/fullPage/dist/jquery.fullPage.min.js"></script>
-		<script type="text/javascript" src="js/lib/ejs.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					//Navigation
-					menu: '#myMenu', //绑定菜单，设定的相关属性anchors的值对应后，菜单控制滚动
-					lockAnchors: false, //是否锁定锚链接
-					anchors: ['introduction', 'exprience', 'skills', 'valuation'],
-					navigation: false,
-					continuousVertical: true,
+    </div>
+    <div class="section item-2">
+        <div class="container">
+            <h class='hidden-xs hidden-sm page2-title'>基本资料</h>
+            <div class="row">
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="./images/page-2/glass.png" alt="">
+                    <h4>基本信息</h4>
+                    <p>
+                        姓名: 陈冀川 男
+                        <br>
+                        年龄: 24岁 籍贯：河北
+                    </p>
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="./images/page-2/hat.png" alt="">
+                    <h4>毕业院校</h4>
+                    <p>
+                        河北联合大学轻工学院
+                    </p>
 
-					//Scrolling
-					css3: true,
-					scrollingSpeed: 700,
-					autoScrolling: true,
-					fitToSection: true,
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="./images/page-2/book.png" alt="">
+                    <h4>学历和专业</h4>
+                    <p>
+                        信息自动化 本科
+                        <br>
+                        专业技能 编程
+                    </p>
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="./images/page-2/tel.png" alt="">
+                    <h4>联系方式</h4>
+                    <p>
+                        邮箱 chenjichuan521@sina.cn
+                        <br>
+                        电话18610982803
+                    </p>
+                </div>
+            </div>
 
-					//					//Accessibility
-					//					keyboardScrolling: true,
-					//					animateAnchor: true,
-					//					recordHistory: true,
-					//
-					//					//Design
-					//					controlArrows: true,
-					//					verticalCentered: true,
-					sectionsColor: ['#D12717', '#D123D3'],
-					paddingTop: '50px',
-					//					paddingBottom: '10px',
-					//events
-					onLeave: function(origin, destination, direction) {},
-					afterLoad: function(origin, destination, direction) {},
-					afterRender: function() {},
-					afterResize: function(width, height) {},
-					afterResponsive: function(isResponsive) {},
-					afterSlideLoad: function(section, origin, destination, direction) {},
-					onSlideLeave: function(section, origin, destination, direction) {}
-				});
-//				$.fn.fullpage.moveSectionDown();
-			});
-		</script>
-	</body>
+        </div>
+    </div>
+    <div class="section item-3">
+        <div class="container">
+            <div class="img-3 hidden-xs">
+                <img src="./images/page-3/5(2).png" alt="">
+            </div>
+            <div class="bg-img hidden-xs hidden-sm">
+                <img src="./images/page-3/1(4).png" alt="">
+            </div>
+            <div class="sm-img fly hidden-xs hidden-sm">
+                <img src="./images/page-3/2(3).png" alt="">
+            </div>
 
+
+            <div class="skill-introduce">
+                <div class="media">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/page-3/tv8.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">PC端</h4>
+                        <p>
+                            熟练使用 Html5 Css3 JavaScript，能够合理完成web端或者移动端页面的编写和维护，<br>
+                            思路清晰，结构完整，易于维护和持久化开发，能处理主流浏览器兼容问题。
+                            熟练使用原生js, 了解js面向对象原理，闭包以及原型结构，能够合理利用面向对象以及模块化开发,并且能适当完成框架封装。熟练使用 jQuery，并能完成相关项目。
+                            <br>熟悉animation fullpage jquery-ui template lazyload jQeasing masonry等实用插件的应用,轮播图，tab栏，瀑布流，延迟加载，全屏滚动等等常用功能的实现
+                            <br>掌握 Ajax交互原理，根据后台接口能够合理完成前后台交互，数据的增删改查
+
+
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/page-3/apple6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">手机端</h4>
+                        <p>熟练使用zepto.js，Frozen ui，Amaze ui等移动框架进行移动页面的开发
+                            <br>掌握 移动端编程，会基于流式布局以及 响应式布局 开发基于移动端的页面。
+                            <br>熟练使用Bootstrap 框架以及轻量级框架 zepto 的使用。
+                        </p>
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/page-3/baterry10.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">其他</h4>
+                        <p>掌握 angularJS 框架原理，可以完成无需刷新的单页面应用
+                            <br>了解Node.js 的工作原理会使用npm、bower环境
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills hidden-xs">
+                <span class="subject-9">Zepto</span>
+                <span class="subject-2">Bootstrap</span>
+                <span class="subject-3">CANVAS</span>
+                <span class="subject-4">jQuery</span>
+                <span class="subject-10">Angular</span>
+                <span class="subject-5">移动端</span>
+                <span class="subject-6">CSS3</span>
+                <span class="subject-7">响应式</span>
+                <span class="subject-8">Nodejs</span>
+                <span class="subject-1">HTML5</span>
+            </div>
+        </div>
+    </div>
+    <div class="section item-4" id='item-4'>
+        <div class="container">
+            <span class='title hidden-xs  hidden-sm' style='display: inline-block'>个人经历</span>
+            <span class='sign col-xs-12 hidden-xs  hidden-sm' style='font-size: 20px'>热爱技术,专注用户体验</span>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/page-4/school.jpg" class=' img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>河北联合大学轻工学院</h3>
+                            <p>信息科学与技术</p>
+                            <p>主要学习编程语言，底层驱动开发</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/page-4/lingyang.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>凌阳爱普</h3>
+                            <p>嵌入式开发</p>
+                            <p>Linux 编程语言，C数据结构和算法，网络开发</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/page-4/anjie.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>北京安杰信息科技</h3>
+                            <p>前端工程师</p>
+                            <p>互联网电商行业的网站开发，移动端开发，以及接部分外包项目</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./images/page-4/dayang.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>北京中科大洋信息</h3>
+                            <p>web前端工程师</p>
+                            <p>媒资系统和新媒体系统以及全媒体平台web页面的开发</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section item-6">
+        <h1>Focus Me</h1>
+        <div class="word">
+        <p>
+            有责任，工作踏实，性格开朗乐观，积极上进。
+        </p>
+        </div>
+    <div class="word">
+        <p>
+           易和人相处，拥有良好的亲和力。<br>
+        </p>
+    </div>
+    <div class="word">
+        <p>
+            喜欢js，非常热爱编程，喜欢钻研新的技术，</br>具有很强的自学能力和良好的学习方法，喜欢研究各种新的框架。
+        </p>
+    </div>
+        <div class="top"></div>
+        <div class="foot"></div>
+    </div>
+</div>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/lib/jquery.fullPage.min.js"></script>
+<script src="js/lib/jquery.easing.1.3.js"></script>
+<script src="js/lib/jquery.isotope.js"></script>
+<script src="js/lib/ejs.js"></script>
+<script src="js/lang/zh_CN.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<script src="js/handler.js"></script>
+<script src="js/resumeEnter.js"></script>
+</body>
 </html>
